@@ -21,6 +21,7 @@ public class Determinante {
         System.out.println("│Cálculo do determinante de uma matriz de 2ª ordem│");
         System.out.println("└─────────────────────────────────────────────────┘");
 
+        // Inserção dos dados
         for (int i=0;i<=1;i++) {
             for (int j=0;j<=1;j++) {
                 System.out.print("Informe o elemento da linha "+i+" , coluna "+j+": ");
@@ -37,14 +38,17 @@ public class Determinante {
             }
         }
 
+        // Cálculo das diagonais
         diagPri = matrix[0][0]*matrix[1][1];
         diagSec = matrix[0][1]*matrix[1][0];
         det = diagPri - diagSec;
 
+        // Exibição dos resultados
         System.out.println("──────────────────────────────────────────────────");
         System.out.println("Prod. diagonal principal:   "+diagPri);
         System.out.println("Prod. diagonal secundária:  "+diagSec);
         System.out.println("Determinante:               "+det);
 
+        sc.close();
     }
 }

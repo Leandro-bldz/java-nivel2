@@ -41,5 +41,7 @@ public class LojasMeses {
                 }
             }
         }
+
+        sc.close();
     }
 }
